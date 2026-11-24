@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CoForest: A Conversational Harness for Mathematical Research with Recursive Solving and Persistent Memory</title>
+  <meta name="description" content="CoForest is a conversational harness for mathematical research with recursive solving, persistent memory, and human–AI collaboration. Read the technical report.">
+  <meta name="citation_title" content="CoForest: A Conversational Harness for Mathematical Research with Recursive Solving and Persistent Memory">
+  <meta name="citation_author" content="Haiteng Zhao">
+  <meta name="citation_author" content="Yuzhe Gu">
+  <meta name="citation_author" content="Songyang Gao">
+  <meta name="citation_author" content="Jiesong Zhang">
+  <meta name="citation_author" content="Zhouqi Hua">
+  <meta name="citation_author" content="Lingkai Kong">
+  <meta name="citation_author" content="Wenyong Huang">
+  <meta name="citation_author" content="Shuya Zhao">
+  <meta name="citation_author" content="Xiaotian Zhang">
+  <meta name="citation_author" content="Chengzhi Xiong">
+  <meta name="citation_author" content="Shuang Sun">
+  <meta name="citation_author" content="Yan Wang">
+  <meta name="citation_author" content="Dahua Lin">
+  <meta name="citation_author" content="Xing Xie">
+  <meta name="citation_author" content="Bowen Zhou">
+  <meta name="citation_author" content="Disheng Xu">
+  <meta name="citation_author" content="Wenwei Zhang">
+  <meta name="citation_publication_date" content="2026/11/11">
+  <meta name="citation_pdf_url" content="https://zhao-ht.github.io/CoForest/CoForest.pdf">
+  <link rel="canonical" href="https://zhao-ht.github.io/CoForest/">
+  <link rel="alternate" type="application/pdf" href="https://zhao-ht.github.io/CoForest/CoForest.pdf" title="Full paper">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="CoForest: A Conversational Harness for Mathematical Research with Recursive Solving and Persistent Memory">
+  <meta property="og:description" content="A conversational harness for mathematical research with recursive solving and persistent memory. Technical report, November 2026.">
+  <meta property="og:url" content="https://zhao-ht.github.io/CoForest/">
+  <meta name="theme-color" content="#133e38">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "CoForest: A Conversational Harness for Mathematical Research with Recursive Solving and Persistent Memory", "name": "CoForest: A Conversational Harness for Mathematical Research with Recursive Solving and Persistent Memory", "author": [{"@type": "Person", "name": "Haiteng Zhao"}, {"@type": "Person", "name": "Yuzhe Gu"}, {"@type": "Person", "name": "Songyang Gao"}, {"@type": "Person", "name": "Jiesong Zhang"}, {"@type": "Person", "name": "Zhouqi Hua"}, {"@type": "Person", "name": "Lingkai Kong"}, {"@type": "Person", "name": "Wenyong Huang"}, {"@type": "Person", "name": "Shuya Zhao"}, {"@type": "Person", "name": "Xiaotian Zhang"}, {"@type": "Person", "name": "Chengzhi Xiong"}, {"@type": "Person", "name": "Shuang Sun"}, {"@type": "Person", "name": "Yan Wang"}, {"@type": "Person", "name": "Dahua Lin"}, {"@type": "Person", "name": "Xing Xie"}, {"@type": "Person", "name": "Bowen Zhou"}, {"@type": "Person", "name": "Disheng Xu"}, {"@type": "Person", "name": "Wenwei Zhang"}], "datePublished": "2026-11-11", "abstract": "Mathematical research requires reasoning at scale, cumulative management of partial progress, and flexible collaboration with human experts. We present CoForest, a conversational harness that supports these requirements through a persistent research workspace. An outer dialogue loop directs research across turns, while a recursive solving module conducts the investigation within each turn. Every subproblem invokes the complete solving procedure, allowing reasoning effort to expand through local iteration and further decomposition. Global memory combines a lemma library, a problem-decomposition forest, and negative knowledge from expert rejections. Useful intermediate results remain available even when their originating problems are unresolved, enabling progress to accumulate across branches and changes of objective. Researchers provide open-ended feedback in natural language; the system interprets its actionable content and routes it to one or more execution paths for rejecting directions, proposing subproblems, continuing unresolved nodes, or pursuing new objectives with inherited memory. A sustained human–agent investigation with CoForest led to a resolution of the codimension-one case of Ghys’s conjecture on holomorphic Anosov systems, including complex dimension three. Early recursive exploration produced complementary analytic insights that the mathematician organized into a subsequent proof strategy. The system then developed and integrated the required arguments under that guidance, and the mathematical author independently verified the resulting proof. Using Intern-S2-Math, the investigation spanned four research rounds, 389 problem nodes, and approximately 861 million tokens. This investigation demonstrates the potential of CoForest to support research-level mathematics through scalable recursive reasoning, persistent memory, and flexible collaboration with human experts.", "url": "https://zhao-ht.github.io/CoForest/", "encoding": {"@type": "MediaObject", "contentUrl": "https://zhao-ht.github.io/CoForest/CoForest.pdf", "encodingFormat": "application/pdf"}}</script>
+  <style>
+    :root { color-scheme: light; --ink: #182e2a; --muted: #4c635d; --accent: #176b56; --line: #d8e4de; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fbfdfc; color: var(--ink); font: 1.0625rem/1.75 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color: var(--accent); text-underline-offset: .2em; }
+    a:hover { color: #0c4c3d; }
+    a:focus-visible, button:focus-visible { outline: 3px solid #a75c14; outline-offset: 4px; }
+    .wrap { width: min(100% - 3rem, 960px); margin-inline: auto; }
+    header { border-top: 5px solid var(--accent); border-bottom: 1px solid var(--line); }
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-block: 1.1rem; font-size: .9375rem; }
+    .wordmark { font-weight: 750; letter-spacing: -.03em; text-decoration: none; color: var(--ink); font-size: 1.25rem; }
+    .topbar nav { display: flex; gap: 1.3rem; }
+    main { padding-block: 3.5rem 4rem; }
+    .kicker { margin: 0 0 1rem; color: var(--accent); font-size: .875rem; font-weight: 650; letter-spacing: .1em; text-transform: uppercase; }
+    h1 { max-width: 940px; margin: 0 0 1.75rem; font: 500 clamp(2rem, 4.7vw, 3.3rem)/1.16 Georgia, "Times New Roman", serif; letter-spacing: -.025em; text-wrap: balance; }
+    h1 .name { color: var(--accent); }
+    .authors { margin: 0 0 .8rem; line-height: 1.9; }
+    .author { display: inline-block; }
+    sup { margin-left: .1em; font-size: .72em; color: var(--muted); }
+    .affiliations { display: flex; flex-wrap: wrap; gap: .25rem 1rem; color: var(--muted); font-size: .875rem; line-height: 1.7; }
+    .affiliations sup { margin: 0 .35em 0 0; }
+    .actions { display: flex; flex-wrap: wrap; gap: .7rem; margin: 1.75rem 0 2.5rem; }
+    .button { display: inline-flex; align-items: center; min-height: 46px; padding: .55rem 1.1rem; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; font-weight: 600; font-size: .9375rem; background: white; }
+    .button.primary { background: var(--accent); border-color: var(--accent); color: white; }
+    .button:hover { border-color: var(--accent); }
+    section { padding-top: 1.5rem; border-top: 1px solid var(--line); margin-top: 2rem; scroll-margin-top: 1.5rem; }
+    h2 { margin: 0 0 1rem; font: 500 1.65rem/1.3 Georgia, "Times New Roman", serif; }
+    .abstract { margin: 0; }
+    .citation-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    button { font: inherit; font-size: .875rem; color: var(--accent); background: white; border: 1px solid var(--line); border-radius: 5px; cursor: pointer; padding: .35rem .75rem; }
+    pre { overflow-x: auto; background: #eff5f1; border: 1px solid var(--line); border-radius: 6px; padding: 1.2rem; font: .875rem/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; tab-size: 2; }
+    .citation-note, footer { font-size: .875rem; color: var(--muted); }
+    footer { padding-block: 1.5rem; border-top: 1px solid var(--line); }
+    footer p { margin: 0; }
+    @media (max-width: 600px) { .wrap { width: min(100% - 2rem, 960px); } main { padding-top: 2rem; } h1 { font-size: 2.1rem; } .authors { font-size: 1rem; } .topbar nav { gap: .9rem; } }
+    @media print { header, .actions, button, footer { display: none; } main { padding: 0; } body { background: white; } .wrap { width: 100%; } pre { white-space: pre-wrap; overflow-wrap: anywhere; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap topbar">
+      <a class="wordmark" href="./">CoForest</a>
+      <nav aria-label="Paper navigation"><a href="CoForest.pdf">Paper</a><a href="#citation">Cite</a><a href="https://github.com/zhao-ht/CoForest">GitHub</a></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <p class="kicker">Technical report · <time datetime="2026-11-11">November 11, 2026</time></p>
+    <h1><span class="name">CoForest:</span> A Conversational Harness for Mathematical Research with Recursive Solving and Persistent Memory</h1>
+    <p class="authors"><span class="author">Haiteng Zhao<sup>1</sup></span>, <span class="author">Yuzhe Gu<sup>1</sup></span>, <span class="author">Songyang Gao<sup>1</sup></span>, <span class="author">Jiesong Zhang<sup>2</sup></span>, <span class="author">Zhouqi Hua<sup>1</sup></span>, <span class="author">Lingkai Kong<sup>1</sup></span>, <span class="author">Wenyong Huang<sup>3</sup></span>, <span class="author">Shuya Zhao<sup>3</sup></span>, <span class="author">Xiaotian Zhang<sup>3</sup></span>, <span class="author">Chengzhi Xiong<sup>3</sup></span>, <span class="author">Shuang Sun<sup>3</sup></span>, <span class="author">Yan Wang<sup>3</sup></span>, <span class="author">Dahua Lin<sup>4</sup></span>, <span class="author">Xing Xie<sup>1</sup></span>, <span class="author">Bowen Zhou<sup>1</sup></span>, <span class="author">Disheng Xu<sup>5</sup></span>, <span class="author">Wenwei Zhang<sup>1</sup></span></p>
+    <div class="affiliations"><span><sup>1</sup>Shanghai AI Laboratory</span>
+<span><sup>2</sup>KTH Royal Institute of Technology</span>
+<span><sup>3</sup>Shanghai Jiao Tong University</span>
+<span><sup>4</sup>MMLab, The Chinese University of Hong Kong</span>
+<span><sup>5</sup>Great Bay University</span></div>
+    <div class="actions">
+      <a class="button primary" href="CoForest.pdf">Read the paper (PDF)</a>
+      <a class="button" href="citation.bib" download>Download BibTeX</a>
+      <a class="button" href="https://github.com/zhao-ht/CoForest">View repository</a>
+    </div>
+    <section aria-labelledby="abstract-heading">
+      <h2 id="abstract-heading">Abstract</h2>
+      <p class="abstract">Mathematical research requires reasoning at scale, cumulative management of partial progress, and flexible collaboration with human experts. We present CoForest, a conversational harness that supports these requirements through a persistent research workspace. An outer dialogue loop directs research across turns, while a recursive solving module conducts the investigation within each turn. Every subproblem invokes the complete solving procedure, allowing reasoning effort to expand through local iteration and further decomposition. Global memory combines a lemma library, a problem-decomposition forest, and negative knowledge from expert rejections. Useful intermediate results remain available even when their originating problems are unresolved, enabling progress to accumulate across branches and changes of objective. Researchers provide open-ended feedback in natural language; the system interprets its actionable content and routes it to one or more execution paths for rejecting directions, proposing subproblems, continuing unresolved nodes, or pursuing new objectives with inherited memory. A sustained human–agent investigation with CoForest led to a resolution of the codimension-one case of Ghys’s conjecture on holomorphic Anosov systems, including complex dimension three. Early recursive exploration produced complementary analytic insights that the mathematician organized into a subsequent proof strategy. The system then developed and integrated the required arguments under that guidance, and the mathematical author independently verified the resulting proof. Using Intern-S2-Math, the investigation spanned four research rounds, 389 problem nodes, and approximately 861 million tokens. This investigation demonstrates the potential of CoForest to support research-level mathematics through scalable recursive reasoning, persistent memory, and flexible collaboration with human experts.</p>
+    </section>
+    <section id="citation" aria-labelledby="citation-heading">
+      <div class="citation-heading"><h2 id="citation-heading">Citation</h2><button id="copy-citation" type="button" hidden>Copy BibTeX</button></div>
+      <p class="citation-note">Please cite this work as a technical report. <a href="citation.bib" download>Download the BibTeX entry</a>.</p>
+      <pre><code id="bibtex">@misc{zhao2026coforest,
+  title        = {{CoForest}: A Conversational Harness for Mathematical Research with Recursive Solving and Persistent Memory},
+  author       = {Zhao, Haiteng and
+                  Gu, Yuzhe and
+                  Gao, Songyang and
+                  Zhang, Jiesong and
+                  Hua, Zhouqi and
+                  Kong, Lingkai and
+                  Huang, Wenyong and
+                  Zhao, Shuya and
+                  Zhang, Xiaotian and
+                  Xiong, Chengzhi and
+                  Sun, Shuang and
+                  Wang, Yan and
+                  Lin, Dahua and
+                  Xie, Xing and
+                  Zhou, Bowen and
+                  Xu, Disheng and
+                  Zhang, Wenwei},
+  year         = {2026},
+  month        = nov,
+  howpublished = {Technical report},
+  url          = {https://zhao-ht.github.io/CoForest/}
+}</code></pre>
+      <span id="copy-status" role="status" aria-live="polite"></span>
+    </section>
+  </main>
+  <footer><div class="wrap"><p>CoForest · <a href="CoForest.pdf">Full text</a> · <a href="https://github.com/zhao-ht/CoForest">Repository and updates</a></p></div></footer>
+  <script>
+    const copyButton = document.getElementById('copy-citation');
+    if (navigator.clipboard && window.isSecureContext) {
+      copyButton.hidden = false;
+      copyButton.addEventListener('click', async () => {
+        const status = document.getElementById('copy-status');
+        try {
+          await navigator.clipboard.writeText(document.getElementById('bibtex').textContent + '\n');
+          status.textContent = 'BibTeX copied to clipboard.';
+        } catch {
+          status.textContent = 'Please select the citation text or download the BibTeX file.';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
