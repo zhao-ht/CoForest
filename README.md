@@ -10,7 +10,7 @@ Haiteng Zhao, Yuzhe Gu, Songyang Gao, Jiesong Zhang, Zhouqi Hua, Lingkai Kong, W
 
 Technical report · November 11, 2026
 
-[Paper website](https://zhao-ht.github.io/CoForest/) · [Full paper (PDF)](CoForest.pdf) · [BibTeX](citation.bib)
+[Paper website](https://zhao-ht.github.io/CoForest/) · [Full paper (PDF)](CoForest.pdf) · [BibTeX](citation.bib) · [Zenodo DOI](https://doi.org/10.5281/zenodo.24488914)
 
 ## Abstract
 
@@ -41,6 +41,7 @@ Mathematical research requires reasoning at scale, cumulative management of part
   year         = {2026},
   month        = nov,
   howpublished = {Technical report},
+  doi          = {10.5281/zenodo.24488914},
   url          = {https://zhao-ht.github.io/CoForest/}
 }
 ```

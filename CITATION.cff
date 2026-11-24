@@ -38,6 +38,7 @@ authors:
     given-names: "Wenwei"
 date-released: 2026-11-11
 url: "https://zhao-ht.github.io/CoForest/"
+doi: "10.5281/zenodo.24488914"
 preferred-citation:
   type: report
   title: "CoForest: A Conversational Harness for Mathematical Research with Recursive Solving and Persistent Memory"
@@ -78,3 +79,4 @@ preferred-citation:
       given-names: "Wenwei"
   date-released: 2026-11-11
   url: "https://zhao-ht.github.io/CoForest/"
+  doi: "10.5281/zenodo.24488914"
